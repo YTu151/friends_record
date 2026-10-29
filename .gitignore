@@ -1,0 +1,62 @@
+# ==================== Python（ai_service/）====================
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# Python 缓存与编译产物
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# 日志
+*.log
+logs/
+
+# ==================== Java（backend/）====================
+# Maven 编译输出
+backend/target/
+
+# 打包产物
+*.jar
+!**/gradle-wrapper.jar
+*.war
+
+# 用户上传的文件（头像等，属于运行时数据）
+backend/uploads/
+uploads/
+!uploads/.gitkeep
+
+# ==================== Node / Vite（frontend/）====================
+# 依赖目录
+node_modules/
+
+# 构建产物
+frontend/dist/
+frontend/.vite/
+
+# 前端日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==================== 环境变量（可能含密钥）====================
+.env
+.env.local
+.env.*.local
+*.env
+
+# ==================== IDE ====================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/*
+!.vscode/extensions.json
+
+# ==================== 操作系统 ====================
+.DS_Store
+Thumbs.db
+Desktop.ini

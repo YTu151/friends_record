@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-primary;
+  background-color: $bg-page;
+  line-height: 1.5;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+// 卡片通用样式
+.card {
+  background: $bg-white;
+  border-radius: $card-radius;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+// 页面容器
+.page-container {
+  padding: 20px;
+  min-height: calc(100vh - $header-height);
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $border-light;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $bg-page;
+}
